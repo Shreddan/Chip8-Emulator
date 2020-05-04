@@ -3,5 +3,9 @@
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    const int width = 1200;
+    const int height = width * 9 / 16;
+    Engine engine;
+    if (!engine.Construct(width, height, 1, 1) { return 1; };
+    else {engine.Start();}
 }

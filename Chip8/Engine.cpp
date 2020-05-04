@@ -2,9 +2,19 @@
 
 Engine::Engine()
 {
-	SDL_INIT_EVERYTHING;
+	sAppName = "Chip8 Emulator";
 }
 
 Engine::~Engine()
 {
+}
+
+bool Engine::OnUserCreate()
+{
+	return true;
+}
+
+bool Engine::OnUserUpdate(float fElapsedTime)
+{
+	return true;
 }

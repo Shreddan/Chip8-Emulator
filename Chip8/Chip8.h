@@ -10,5 +10,17 @@ public:
 	unsigned char V[16];
 	unsigned short IndexReg;
 	unsigned short ProgCount;
+	unsigned char gfx[64 * 32];
+	unsigned char delayTimer;
+	unsigned char soundTimer;
+
+	unsigned short stack[16];
+	unsigned short sp;
+
+	unsigned char key[16];
+
+	void initialise();
+
+	void emCycle();
 };
 
