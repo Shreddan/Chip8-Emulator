@@ -12,5 +12,7 @@ public:
 	bool OnUserUpdate(float fElapsedTime);
 
 	Chip8 mychip8;
+
+	int screen = (64 * 32);
 };
 
